@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Navbar } from "./components/Navbar/Navbar";
 import styles from './App.module.css';
 import { Hero } from "./components/Navbar/Hero/Hero";
-
+import { ImageSlider } from "./components/Navbar/ImageSlider/ImageSlider";
 
 
 function App() {
@@ -13,18 +13,13 @@ function App() {
       <div className = {styles.App}>
         <Navbar />
         <Hero />
+        <ImageSlider />
       </div>
       <div className={styles.App}>      
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

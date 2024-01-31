@@ -4,6 +4,7 @@ import styles from "./Navbar.module.css";
 // import { getImageUrl } from "../../utils";
 import hamburgerIcon from '../../assets/nav/icons8-hamburger-menu-100.png';
 import closeIcon from '../../assets/nav/closeIcon.png';
+import MAQ from "../../assets/nav/MAQ.png";
 
 
 export const Navbar = () => {
@@ -18,10 +19,15 @@ export const Navbar = () => {
                 alt="menu-button"
                 onClick={() => setMenuOpen(!menuOpen)}
         />
-        <a className={styles.mainPageTitle} href="/">
-            Game Design Document
-        </a>
+            <a className={styles.mainPageTitle} href="/">
+                Game Design Document
+            </a>
             <div className={`${styles.menu} ${menuOpen ? styles.menuOpen : ''}`}>
+                <img className={styles.MAQ}
+                src={MAQ}
+                alt="MAQ"
+                >
+                </img>
                 <ul className={styles.menuItems}>
                     <li>
                         <a href="#Portfolio">Porfolio</a>

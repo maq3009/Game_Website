@@ -1,0 +1,36 @@
+.mediaScroller {
+    display: flex;
+    overflow-x: auto;
+    position: absolute; /* Position it absolutely within a relative container */
+    top: 60px; /* Height of the top nav bar */
+    left: 140px; /* Width of the vertical menu */
+    right: 0; /* Stretch to the right edge */
+    padding: 10px; /* Optional padding */
+    gap: 10px;
+}
+
+.mediaElement {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    width: 100px;  /* Fixed width for each media element */
+}
+
+
+.mediaElement img {
+    width: 100%; /* Make images take full width of their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .mediaScroller {
+        left: 0px; /* Adjust left margin to fit smaller screens */
+        right: 10px; /* Adjust right margin to fit smaller screens */
+    }
+
+    .mediaElement {
+        width: 100px; /* Smaller width for each media element */
+    }
+
+    /* .mediaElement img {
+        /* If needed, add specific styles for images on smaller screens */
+    
+}

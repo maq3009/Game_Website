@@ -1,8 +1,38 @@
-.MAQ {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 300px;
-    object-fit: contain; /* This ensures the image maintains its aspect ratio */
+@import "../../../vars.css";
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 450px;
+    z-index: 1;
+    margin-left: 30%;
+    margin-right: 5%; 
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+    margin-right: 10%;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 33px;
+    font-family: var(--font-roboto);
+    background: linear-gradient(
+        90deg, 
+        rgba(255,255,255,0) 0%, 
+        rgb(230, 158, 158, 0) 5%,
+        rgba(255,255,255,0.5) 10%,
+        rgba(255,255,255,0) 100%
+    );
+
+    z-index: 1;
+}
+
