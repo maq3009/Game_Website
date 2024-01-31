@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { Navbar } from "./components/Navbar/Navbar";
 import styles from './App.module.css';
+import { Hero } from "./components/Navbar/Hero/Hero";
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +12,7 @@ function App() {
     <>
       <div className = {styles.App}>
         <Navbar />
+        <Hero />
       </div>
       <div className={styles.App}>      
         <button onClick={() => setCount((count) => count + 1)}>
