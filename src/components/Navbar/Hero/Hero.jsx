@@ -12,6 +12,8 @@ export const Hero = () => {
             <a href="mailto:maq3009@gmail.com" className={styles.contactBtn}>Contact Me</a>
 
         </div>
+        <div className={styles.topBlur}/>
+        <div className={styles.bottomBlur}/>
     </section>
     )
 }

@@ -55,7 +55,26 @@
     width: 60px;
     height: 60px;
     object-fit: contain; /* This ensures the image maintains its aspect ratio */
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, -0px);
+        
+    }
+}
+
 
 .menuItems {
     display: flex;
@@ -114,7 +133,18 @@
     margin-bottom: 10%;
 }
 
-
+.contactBtn{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    align-items: center;
+    padding: 12px;
+    text-decoration: none;
+    border: 2px solid rgb(36, 36, 37);
+    border-radius: 5%;
+    background-color: rgb(9, 9, 9);
+}
 @media (max-width: 768px) {
     .menu {
    
