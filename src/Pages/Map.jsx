@@ -1,0 +1,15 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import { Navbar } from '../components/Navbar/Navbar';
+
+const Map = () => {
+  return (
+    <div>
+      <h1>Map Page</h1>
+      <Navbar/>
+      {/* Content goes here */}
+    </div>
+  );
+};
+
+export default Map;

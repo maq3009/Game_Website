@@ -5,7 +5,7 @@ import styles from "./Navbar.module.css";
 import hamburgerIcon from '../../assets/nav/icons8-hamburger-menu-100.png';
 import closeIcon from '../../assets/nav/closeIcon.png';
 import MAQ from "../../assets/nav/MAQ.png";
-
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 
@@ -31,40 +31,40 @@ export const Navbar = () => {
             </img>
             <ul className={styles.menuItems}>
                 <li>
-                    <a href="#Portfolio">Porfolio</a>
+                    <Link to="/portfolio">Portfolio</Link>
                 </li>
                 <li>
-                    <a href="#Characters">Characters</a>
+                    <Link to="/characters">Characters</Link>
                 </li>
                 <li>
-                    <a href="#Enemies">Enemies</a>
+                    <Link to="/enemies">Enemies</Link>
                 </li>
                 <li>
-                    <a href="#Bosses">Bosses</a>
+                    <Link to="/bosses">Bosses</Link>
                 </li>
                 <li>
-                    <a href="#Main Story">Main Story</a>
+                    <Link to="/gameCode">GameCode</Link>
                 </li>
                 <li>
-                    <a href="#Side Quests">Side Quests</a>
+                    <Link to="/sideQuests">Side Quests</Link>
                 </li>
                 <li>
-                    <a href="#Weapons">Weapons</a>
+                    <Link to="/gameItems">GameItems</Link>
                 </li>
                 <li>
-                    <a href="#Game Items">Game Items</a>
+                    <Link to="/music">Music</Link>
                 </li>
                 <li>
-                    <a href="#Music">Music</a>
+                    <Link to="/mainStory">MainStory</Link>
                 </li>
                 <li>
-                    <a href="#Map">Map</a>
+                    <Link to="/map">Map</Link>
                 </li>
                 <li>
-                    <a href="#Game Code">Game Code</a>
+                    <Link to="/weapons">Weapons</Link>
                 </li>
                 <li>
-                    <a href="#Updates">Updates</a>
+                    <Link to="/updates">Updates</Link>
                 </li>
             </ul>
             
