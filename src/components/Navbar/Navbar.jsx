@@ -31,7 +31,7 @@ export const Navbar = () => {
             </img>
             <ul className={styles.menuItems}>
                 <li>
-                    <Link to="/portfolio">Portfolio</Link>
+                    <Link to="/portfolio">PORTFOLIO</Link>
                 </li>
                 <li>
                     <Link to="/characters">Characters</Link>
