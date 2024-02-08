@@ -2,17 +2,13 @@
 import React from "react";
 import rpgGuy from "../../src/assets/nav/rpgGuy.png";
 import styles from "./About.module.css";
-import logo from "../../src/assets/nav/MAQ.png";
 
 export const About = () => {
     return (
         <section className={styles.container}>
             <h2 className={styles.title}>About</h2>
             <div className={styles.content}>
-                <img src={logo} 
-                alt="Me sitting with a laptop" 
-                className={styles.aboutImage}
-            />
+
             <ul className={styles.aboutItems}>
                 <li className={styles.aboutItem}>
                     <img src={rpgGuy} alt="rpg icon"/> 

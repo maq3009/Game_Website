@@ -1,0 +1,13 @@
+.logoDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.aboutImage {
+
+    height: 400px;
+    width: auto;
+}

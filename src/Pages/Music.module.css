@@ -1,0 +1,97 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.pageTitle {
+    align-self: center;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    margin-left: 20%;
+    gap: 100px;
+    flex-direction: row;
+
+}
+
+
+.playerContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 20px;
+
+}
+
+.previewImage, .audioPlayer {
+    margin: auto;
+    width: 440px;
+    display: block;
+    padding: 10px;
+    margin-left: 0;
+}
+
+.buttonsContainer::-webkit-scrollbar {
+    width: 12px;
+}
+
+.buttonsContainer::-webkit-scrollbar {
+    background: #f1f1f1;
+}
+
+.buttonContainer::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.buttonsContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.buttonsContainer {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    gap:5px;
+    overflow-y: auto;
+    max-height: 420px;
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-right: 20%;
+    
+}
+
+.musicButton {
+    background-color: rgb(171, 171, 244);
+    padding: 10px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .playerContainer, .buttonsContainer {
+        margin-right: 0;
+        width: 75%;
+    }
+    .pageTitle {
+        align-self: center;
+        margin: 20px 0;
+    }
+    .buttonsContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap:10px;
+        max-height: 400px;
+    }
+}
