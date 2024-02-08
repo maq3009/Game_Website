@@ -7,7 +7,7 @@ import img3 from "../assets/Characters/0_Minotaur_Falling Down_001.png";
 import img4 from "../assets/Characters/0_Sage_Communication_001.png";
 import img5 from "../assets/Characters/0_Warlord_Communication_001.png";
 import img6 from "../assets/Characters/Idle.png";
-import styles from "./Character.module.css";
+import styles from "./Characters.module.css";
 
 
 const Characters = () => {

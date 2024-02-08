@@ -5,7 +5,7 @@ import styles from './App.module.css';
 // import { ImageSlider } from "./components/Navbar/ImageSlider/ImageSlider";
 // import { About } from "./components/About";
 import Bosses from "./Pages/Bosses";
-import Characters from "./Pages/Characters";
+// import Characters from "./Pages/Characters";
 import Enemies from "./Pages/Enemies";
 import GameCode from "./Pages/GameCode";
 import GameItems from "./Pages/GameItems";
@@ -17,6 +17,8 @@ import SideQuests from "./Pages/SideQuests";
 import Updates from "./Pages/Updates";
 import Weapons from "./Pages/Weapons";
 import HomePage from "./Pages/HomePage";
+import SpriteGallery from './Pages/SpriteGallery';
+
 import {
   createBrowserRouter,
 
@@ -71,8 +73,8 @@ const router = createBrowserRouter([
     element: <Enemies />,
   },
   {
-    path: "/characters",
-    element: <Characters />,
+    path: "/SpriteGallery",
+    element: <SpriteGallery />,
   },
   {
     path: "/bosses",
