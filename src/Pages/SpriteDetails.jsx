@@ -36,11 +36,7 @@ import PropTypes from "prop-types";
 
 
 
-function SpriteDetails({ spriteId, sprites }) {
-  const sprite = sprites.find((sprite) => sprite.id === spriteId);
-
-  if (!sprite) return null;
-
+function SpriteDetails({ sprite }) {
   return (
     <div style={{ textAlign: 'center' }}>
       <h2>{sprite.name} - Animation</h2>
@@ -53,7 +49,7 @@ function SpriteDetails({ spriteId, sprites }) {
 
 SpriteDetails.propTypes = {
   spriteId: PropTypes.number.isRequired, // Assuming spriteId is a number
-  sprites: PropTypes.arrayOf(
+  sprite: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       name: PropTypes.string,

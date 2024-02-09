@@ -1,7 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import SpriteDetails from './SpriteDetails';
 import { Navbar } from '../components/Navbar/Navbar';
+import Sprite from "./Sprite";
+
 
 
 
@@ -12,22 +13,10 @@ const sprites = [
 ];
 
 function SpriteGallery() {
-  const [selectedSpriteId, setSelectedSpriteId] = useState(null);
-
-  const handleSelectSprite = (id) => {
-    setSelectedSpriteId(id);
-  };
-
   return (
     <div>
       <Navbar/>
-      {sprites.map((sprite) => (
-        <div key={sprite.id}>
-          <h3>{sprite.name}</h3>
-          <button onClick={() => handleSelectSprite(sprite.id)}>View Animation</button>
-        </div>
-      ))}
-      {selectedSpriteId && <SpriteDetails spriteId={selectedSpriteId} sprites={sprites} />}
+      {sprites.map(sprite => <Sprite key={sprite.id} sprite={sprite} />)}
     </div>
   );
 }

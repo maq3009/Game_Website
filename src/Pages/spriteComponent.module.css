@@ -2,6 +2,13 @@ body {
     font-family: Arial, sans-serif;
   }
   
+  .spritesCollection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+
   div {
     margin-bottom: 20px;
   }
